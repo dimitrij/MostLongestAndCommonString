@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Commmon and Longest String</title>
+    
+</head>
+<body>
+   <h1>Jag kommer ange 2 strängar och mitt dataprogram kommer hitta om det finns någon mönster och skriva ut den längsta mönster den hittar i dessa två strängar.</h1> 
+   <h2><div id="output"> </div></h2>
+   <script src="MostLongestAndCommonString.js"></script>
+    <script>
+        var str1 = "Jag promenerar i Helsingborg. Hej Hej Hej.";
+        var str2 = "Jag promenerar i Göteborg. Hej Hej Hej.";
+        var str3 = "Jag promenerar i Malmö. Hej Hej Hej.";
+
+
+        document.getElementById("output").innerHTML = 
+        MostLongenstAndCommonString(str1,str2) + "<br>";
+
+
+
+        document.getElementById("output").innerHTML += 
+        MostLongenstAndCommonString(str1,str3);
+    </script>
+
+</body>
+</html>
